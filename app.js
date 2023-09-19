@@ -2,16 +2,16 @@
 const switcher = document.querySelector('.btn');
 
 switcher.addEventListener('click',function(){
-    document.body.ClassList.toggle('dark-theme')
+    document.body.classList.toggle('dark-theme')
 
 
     var className = document.body.className;
     if(className == 'light-theme') {
-        this.texContent = "dark"
         console.log('current class name: '+ className);
+        this.textContent = "dark"
     }
     else{
-        this.texContent = "Light";
+        this.textContent = "Light";
     }
 });
 
